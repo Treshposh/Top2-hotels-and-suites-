@@ -66,14 +66,7 @@ on the restaurant and events-hall walls, redrawn in vector.
 
 Responsive from 375 px up. Dark mode supported.
 
-## Hosting it free with GitHub Pages
 
-1. Push this repository to GitHub (public).
-2. On GitHub: **Settings → Pages**.
-3. Under *Build and deployment*, set **Source: Deploy from a branch**,
-   **Branch: `main`**, folder **`/ (root)`**. Save.
-4. Wait a minute or two. The site appears at
-   `https://<your-username>.github.io/<repo-name>/`.
 
 To use a real domain later, add it under Settings → Pages → Custom domain and
 point the DNS at GitHub.
