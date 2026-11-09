@@ -1,0 +1,161 @@
+# The admin panel for the Top 2 Hotels & Suites website (version 2).
+backend:
+  name: github
+  repo: Treshposh/Top2-hotels-and-suites-
+  branch: main
+  commit_messages:
+    update: 'Website edit: {{collection}} “{{slug}}”'
+    uploadMedia: 'Website edit: upload “{{path}}”'
+    deleteMedia: 'Website edit: delete “{{path}}”'
+site_url: https://top2hotels.com/v2/
+display_url: https://top2hotels.com/v2/
+media_folder: v2/img
+public_folder: img
+media_libraries:
+  default:
+    config:
+      max_file_size: 15000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1800
+          height: 1800
+collections:
+- name: site
+  label: Website
+  icon: hotel
+  files:
+  - name: site
+    label: Photos and wording
+    file: v2/content/site.json
+    fields:
+    - name: hero
+      label: Top of page slideshow
+      label_singular: slide
+      widget: list
+      collapsed: true
+      summary: '{{fields.title}}'
+      hint: The big photos that change at the top. Drag to reorder, add or remove slides.
+      fields:
+      - {name: photo, label: Photo, widget: image, hint: 'Wide (landscape) photos work best.'}
+      - {name: photo_alt, label: Photo description, widget: string, required: false, hint: 'A few words describing the photo, read aloud to blind visitors.'}
+      - {name: title, label: Headline, widget: string, required: false}
+      - {name: text, label: Line under the headline, widget: text, required: false}
+    - name: intro
+      label: Three cards under the booking bar
+      widget: object
+      collapsed: true
+      fields:
+      - name: c1
+        label: First card (Easy to find)
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: title, label: Heading, widget: string, required: false}
+        - {name: text, label: Paragraph, widget: text, required: false}
+      - name: c2
+        label: Second card (Power)
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: title, label: Heading, widget: string, required: false}
+        - {name: text, label: Paragraph, widget: text, required: false}
+      - name: c3
+        label: Third card (Reception)
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: title, label: Heading, widget: string, required: false}
+        - {name: text, label: Paragraph, widget: text, required: false}
+    - name: rooms
+      label: Rooms
+      widget: object
+      collapsed: true
+      fields:
+      - name: classic
+        label: Classic Room
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false, hint: 'Upright (portrait) photos work best.'}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: badge, label: Label on the photo, widget: string, required: false}
+        - {name: name, label: Room name, widget: string, required: false}
+        - {name: text, label: Description, widget: text, required: false}
+      - name: executive
+        label: Executive Room
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false, hint: 'Upright (portrait) photos work best.'}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: badge, label: Label on the photo, widget: string, required: false}
+        - {name: name, label: Room name, widget: string, required: false}
+        - {name: text, label: Description, widget: text, required: false}
+      - name: deluxe
+        label: Deluxe Room
+        widget: object
+        collapsed: true
+        fields:
+        - {name: photo, label: Photo, widget: image, required: false, hint: 'Upright (portrait) photos work best.'}
+        - {name: photo_alt, label: Photo description, widget: string, required: false}
+        - {name: badge, label: Label on the photo, widget: string, required: false}
+        - {name: name, label: Room name, widget: string, required: false}
+        - {name: text, label: Description, widget: text, required: false}
+    - name: events
+      label: Events hall and meeting room photos
+      widget: object
+      collapsed: true
+      fields:
+      - {name: hall_photo, label: Events hall photo, widget: image, required: false}
+      - {name: hall_photo_alt, label: Events hall photo description, widget: string, required: false}
+      - {name: meeting_photo, label: Meeting room photo, widget: image, required: false}
+      - {name: meeting_photo_alt, label: Meeting room photo description, widget: string, required: false}
+    - name: dining
+      label: Bar photo
+      widget: object
+      collapsed: true
+      fields:
+      - {name: bar_photo, label: Bar photo, widget: image, required: false}
+      - {name: bar_photo_alt, label: Photo description, widget: string, required: false}
+    - name: gallery
+      label: Gallery
+      label_singular: photo
+      widget: list
+      collapsed: true
+      summary: '{{fields.caption}}'
+      hint: Drag to reorder. Add as many photos as you like, or remove any.
+      fields:
+      - {name: photo, label: Photo, widget: image}
+      - {name: photo_alt, label: Photo description, widget: string, required: false}
+      - {name: caption, label: Caption, widget: string, required: false}
+      - name: shape
+        label: Size in the grid
+        widget: select
+        default: square
+        options:
+        - {label: Square, value: square}
+        - {label: Wide (two squares across), value: wide}
+        - {label: Tall (two squares down), value: tall}
+    - name: contact
+      label: Phone numbers, WhatsApp, email and address
+      widget: object
+      collapsed: true
+      fields:
+      - {name: phone1, label: Main reservations number, widget: string, required: false, hint: 'Written the way guests should see it, e.g. 0703 640 4868.'}
+      - {name: phone2, label: Second number (events desk), widget: string, required: false}
+      - name: whatsapp
+        label: WhatsApp number for bookings and orders
+        widget: string
+        required: false
+        hint: Digits only, starting with 234, for example 2347036404868. Every booking, food order and WhatsApp button goes here.
+        pattern: ['^234[0-9]{10}$', 'Use digits only, starting with 234, for example 2347036404868.']
+      - {name: email, label: Email address, widget: string, required: false}
+      - {name: address, label: Address, widget: text, required: false, hint: 'One line per row. Also used for the Google Maps buttons.'}

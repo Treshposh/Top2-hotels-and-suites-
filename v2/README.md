@@ -5,7 +5,7 @@ photos and wording without touching code. The original site in the folder above
 is left exactly as it was.
 
 - Website: `v2/index.html` → https://top2hotels.com/v2/
-- Admin panel: `v2/admin/` → https://top2hotels.com/v2/admin/
+- Admin panel: `admin/` → https://top2hotels.com/admin/ (also at /v2/admin/)
 
 ## What can be edited
 
