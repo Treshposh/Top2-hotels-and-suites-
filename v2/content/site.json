@@ -1,0 +1,138 @@
+{
+  "hero": [
+    {
+      "photo": "img/exterior-courtyard.jpg",
+      "photo_alt": "The gated courtyard of Top 2 Hotels and Suites, with solar panels across the roof.",
+      "title": "Stay in Rumuolumeni",
+      "text": "Rooms, an events hall and a restaurant behind one gate — with solar backup, so the lights and the air conditioning stay on."
+    },
+    {
+      "photo": "img/events-hall.jpg",
+      "photo_alt": "The Top 2 events hall, laid out with tables and chairs facing the stage.",
+      "title": "Room for two hundred",
+      "text": "A pillared hall with its own entrance, a stage end and catering from the kitchen on site."
+    },
+    {
+      "photo": "img/lounge.jpg",
+      "photo_alt": "The Top 2 reception lounge, with red and green velvet seating.",
+      "title": "Come in and sit down",
+      "text": "A lounge off reception, a restaurant, and the shawarma hut at the gate — open late."
+    }
+  ],
+  "intro": {
+    "c1": {
+      "photo": "img/signboard.jpg",
+      "photo_alt": "The Top 2 Hotels and Suites roadside sign on Charles Ogun Street.",
+      "title": "Easy to find",
+      "text": "1 Charles Ogun Street, Mgboudohia, Rumuolumeni — west Port Harcourt, off the Rumuolumeni road."
+    },
+    "c2": {
+      "photo": "img/corridor.jpg",
+      "photo_alt": "A guest corridor with polished floors and cove lighting.",
+      "title": "Power that holds",
+      "text": "Rooftop solar feeding a battery bank, with a generator behind it. Rooms and the hall stay lit and cool through the usual outages."
+    },
+    "c3": {
+      "photo": "img/reception.jpg",
+      "photo_alt": "The marble reception desk at Top 2, with a member of staff answering the phone beneath a gold feature wall.",
+      "title": "Someone is always at the desk",
+      "text": "Reception is staffed around the clock, behind a manned gate with CCTV through the corridors and free parking inside the wall."
+    }
+  },
+  "rooms": {
+    "classic": {
+      "photo": "img/room-classic.jpg",
+      "photo_alt": "A Classic Room with a blue upholstered headboard, double bed, armchair and bedside table.",
+      "badge": "Classic",
+      "name": "Classic Room",
+      "text": "A double room with an armchair and a work surface — the everyday room for one or two guests."
+    },
+    "executive": {
+      "photo": "img/room-executive.jpg",
+      "photo_alt": "The Executive Room: a king bed with a black padded headboard in a marble surround with reading lights, a patterned armchair, side table and framed mirror.",
+      "badge": "Executive",
+      "name": "Executive Room",
+      "text": "A king bed and more floor space, with a seating corner — the room to take for a longer stay."
+    },
+    "deluxe": {
+      "photo": "img/room-deluxe.jpg",
+      "photo_alt": "The Deluxe Room: a king bed against a patterned headboard with wall lights, a dressing table and mirror, and a moulded gold ceiling.",
+      "badge": "Deluxe",
+      "name": "Deluxe Room",
+      "text": "The largest room on the property — a king bed, a dressing table and enough floor to move around in. Take this one for a family or a week."
+    }
+  },
+  "events": {
+    "hall_photo": "img/events-hall.jpg",
+    "hall_photo_alt": "The events hall set with tables and red, green and white chairs, facing the stage.",
+    "meeting_photo": "img/meeting-room.jpg",
+    "meeting_photo_alt": "The meeting room, with skirted blue tables, folding chairs, a wall screen and marble panelling."
+  },
+  "dining": {
+    "bar_photo": "img/bar.jpg",
+    "bar_photo_alt": "The Top 2 bar: a barred serving window onto a lit drinks fridge, with the hotel’s printed drinks list on the wall beside it."
+  },
+  "contact": {
+    "phone1": "0703 640 4868",
+    "phone2": "0812 339 1957",
+    "whatsapp": "2347036404868",
+    "email": "info@top2hotels.com",
+    "address": "1 Charles Ogun Street\nMgboudohia, Rumuolumeni\nPort Harcourt, Rivers State, Nigeria"
+  },
+  "gallery": [
+    {
+      "photo": "img/exterior-street.jpg",
+      "photo_alt": "The charcoal-painted Top 2 building from Charles Ogun Street, with its gold gate.",
+      "caption": "Charles Ogun Street",
+      "shape": "wide"
+    },
+    {
+      "photo": "img/corridor.jpg",
+      "photo_alt": "A guest corridor with polished dark floors and blue cove lighting.",
+      "caption": "Guest corridor",
+      "shape": "tall"
+    },
+    {
+      "photo": "img/reception.jpg",
+      "photo_alt": "The marble reception desk beneath a gold feature wall.",
+      "caption": "Reception",
+      "shape": "square"
+    },
+    {
+      "photo": "img/lounge.jpg",
+      "photo_alt": "Reception lounge with red and green velvet seating.",
+      "caption": "Lounge",
+      "shape": "square"
+    },
+    {
+      "photo": "img/room-deluxe.jpg",
+      "photo_alt": "The Deluxe Room, with its moulded gold ceiling and king bed.",
+      "caption": "Deluxe room",
+      "shape": "square"
+    },
+    {
+      "photo": "img/bar.jpg",
+      "photo_alt": "The bar window and drinks list.",
+      "caption": "The bar",
+      "shape": "square"
+    },
+    {
+      "photo": "img/room-executive.jpg",
+      "photo_alt": "The Executive Room, with its lit marble headboard and king bed.",
+      "caption": "Executive room",
+      "shape": "square"
+    },
+    {
+      "photo": "img/events-hall.jpg",
+      "photo_alt": "The events hall laid out for a function.",
+      "caption": "Events hall",
+      "shape": "square"
+    },
+    {
+      "photo": "img/meeting-room.jpg",
+      "photo_alt": "Meeting room with blue skirted tables.",
+      "caption": "Meeting room",
+      "shape": "square"
+    }
+  ]
+}
