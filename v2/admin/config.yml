@@ -7,8 +7,8 @@ backend:
     update: 'Website edit: {{collection}} “{{slug}}”'
     uploadMedia: 'Website edit: upload “{{path}}”'
     deleteMedia: 'Website edit: delete “{{path}}”'
-site_url: https://treshposh.github.io/Top2-hotels-and-suites-/v2/
-display_url: https://treshposh.github.io/Top2-hotels-and-suites-/v2/
+site_url: https://top2hotels.com/v2/
+display_url: https://top2hotels.com/v2/
 media_folder: v2/img
 public_folder: img
 media_libraries:

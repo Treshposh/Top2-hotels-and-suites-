@@ -4,8 +4,8 @@ The same site as the main page, plus an admin panel so the hotel can change
 photos and wording without touching code. The original site in the folder above
 is left exactly as it was.
 
-- Website: `v2/index.html` → https://treshposh.github.io/Top2-hotels-and-suites-/v2/
-- Admin panel: `v2/admin/` → https://treshposh.github.io/Top2-hotels-and-suites-/v2/admin/
+- Website: `v2/index.html` → https://top2hotels.com/v2/
+- Admin panel: `v2/admin/` → https://top2hotels.com/v2/admin/
 
 ## What can be edited
 
